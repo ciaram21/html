@@ -1,0 +1,101 @@
+<head>
+    <link rel='stylesheet' href='Style.CSS'>
+    </head>
+    <title> Card Payments </title>
+    <body> 
+    
+    <ul class='nav'>
+    <li class='navItem'><a href='/html/homepage.html'> Home </a> </li>
+    <li class='navItem'><a href='/html/aboutuspage.html'> About Us </a> </li>
+    <li class='navItem'><a href='/html/recipeblog.html'> Blog </a> </li>
+    <li class='navItem'><a href='/html/ContactUsPage.html'> Contact </a> </li>
+    <li class='navItem'><a href='/html/productpage.html'> Products </a> </li>
+    <li class='navItem'><a href='/html/deliverypage.html'> Delivery </a> </li>
+    </ul>
+    
+    <header>
+    <h1 class="main-title">
+    <p>Payment</p></h1></header>
+  
+    <h2>Card payments</h2>
+      <form>
+        <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Shipping Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address">
+            <label for="city"><i class="fa fa-institution"></i> Town/City</label>
+            <input type="text" id="city" name="city">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="county">County</label>
+                <input type="text" id="County" name="County">
+              </div>
+              <div class="col-50">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <select name="Accepted Cards" id="Accepted Cards">
+                <option disabled selected>*Choose the type of Card</option>
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Maestro">Maestro</option>
+                <option value="American Express">American Express</option><br>
+            
+        </div>
+            <label for="cname">*Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Jane Smith">
+            <label for="ccnum">*Card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16">
+            <label for="expmonth">*Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="March">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">*Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2021">
+              </div>
+              <div class="col-50">
+                <label for="cvv">*CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="555" maxlength="3">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" check="checked" name="sameadr"> Billing address same as shipping
+        </label>
+        <input type="submit" value="Continue to checkout" class="button">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Shopping Basket
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-Basket"></i><br>
+          <b></b>
+        </span>
+        <p>Total <span class="price" style="color:black"><b>£0</b></span></p>
+    </div>
+  </div>
+</div>
+      </form>
+  </body>
